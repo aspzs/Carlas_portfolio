@@ -1,0 +1,29 @@
+.year-titles ul{
+	opacity: 1;
+  pointer-events: initial !important;
+}
+
+
+#wrapper-event{
+  background-color: transparent;
+  position: fixed;
+  display: flex; 
+  height: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 999 !important;
+  pointer-events: none;
+  box-shadow: none;
+  background-image: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+
+    .year-titles ul{
+      opacity: 0;
+    }
+
+
+  }

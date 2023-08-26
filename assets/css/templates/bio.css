@@ -1,0 +1,40 @@
+#bio{
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  font-size: 1.5em;
+  padding-right: 30px;
+  margin-left: 2px;
+  height: auto;
+}
+
+#basic-info h1,
+#basic-info h2,
+#basic-info h3{
+    font-size: 1.5em;
+}
+
+#basic-info h3{
+    margin-bottom: 10px;
+}
+
+.actus{
+    margin-top: 5vw;
+}
+
+.actus strong{
+    text-decoration: underline;
+}
+
+/*h5{
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+*/
+.credits{
+    margin-left: 5px;
+}
+
+em {
+	font-style: italic;
+}

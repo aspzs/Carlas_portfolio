@@ -1,0 +1,1550 @@
+@font-face {
+  font-family: "VeveyHumanKind";
+  src: url("../fonts/Vevey-HumanKind.woff2") format("woff2"),
+    url("../fonts/Vevey-HumanKind.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VeveyPositive";
+  src: url("../fonts/Vevey-Positive.woff2") format("woff2"),
+    url("../fonts/Vevey-Positive.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VeveyPositiveEdit";
+  src: url("../fonts/edit/Vevey-Positive.otf") format("OpenType"),
+    url("../fonts/edit/Vevey-Positive.otf") format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'suisse_medium';
+  src: url('../fonts/suisseintl-medium-webfont.woff2') format('woff2'),
+       url('../fonts/suisseintl-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'suisse_ultralight';
+  src: url('../fonts/suisseintl-ultralight-webfont.woff2') format('woff2'),
+       url('../fonts/suisseintl-ultralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  background-color: transparent;
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-menu ul li {
+  list-style-type: none;
+  padding: 0 0 0.2em 0.2em;
+}
+
+.nav-down{
+  width: 100%;
+  background-color: transparent;
+}
+
+:root {
+  --clr-black: black;
+  --clr-white: white;
+  --font-size-s: 1.2rem;
+  --top: 60px;
+  --flow-space: 2.5rem;
+  --margin-s: 1rem;
+  --margin-l: 3.5rem;
+  --tile: 30px;
+  --tile-offset-x: 0vw;
+  --tile-offset-y: 0vh;
+  --font-text: "VeveyPositiveEdit";
+  --img-url: url(../../../localhost_8888/Indiana/media/pages/expositions/amateur/2737274333-1643817087/1.jpg);
+  --ball: 0.5rem;
+  --intent: calc(var(--margin-s)*1.2);
+}
+
+@media only screen and (min-width: 1900px) and (min-height: 1000px) {
+  :root {}
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-m: 1.37rem;
+    --font-size-s: 1.4rem;
+  }
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: var(--font-size-s);
+}
+
+body a {
+  color: inherit;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 3px solid dodgerblue;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo {
+    margin-left: 14vw;
+  }
+}
+
+.display {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .display {
+    display: none;
+  }
+
+  .display-none {
+    display: block;
+  }
+}
+
+.collapsible {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: none;
+  font-size: 25px;
+}
+#social{
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content-collapse {
+  margin-left: 18px;
+  width: 500%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.content-collapse p {
+  margin-bottom: 10px;
+  background-color: white;
+  font-size: 19px;
+  padding: 7px;
+  font-family: 'suisse_medium', Arial, Helvetica, sans-serif;
+}
+
+.logos p {
+  margin-left: 10px;
+  text-decoration: underline;
+  margin-bottom: 0 !important;
+}
+
+/* ESTO CONTIENE LAS IMAGENES */
+.iconBio{
+  width: 120%;
+  transform: translate(-10%, 0%);
+  background-color: transparent;
+}
+
+#bio{
+  width: 600px;
+  transform: translate(0px, 470px);
+}
+
+.estrellas{
+  font-size: 30px;
+  transform: translate(-490px,0px);
+}
+
+.icono1{
+  width: 90px;
+}
+
+.icono3{
+  width: 360px;
+  transform: translate(-390px, 20px);
+  z-index: -999;
+}
+.icono4{
+  width: 120px;
+  z-index: -999;
+}
+
+
+
+/* CONTIENE LOS 3 ICONOS */
+.icons{
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.icons1{
+  font-size: 50px;
+  margin-left: 10px;
+
+}
+
+.icons2{
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+.link{
+  width: 5%;
+}
+
+.icono2{
+  transform: translate(-40%,-70%);
+
+}
+
+/* PARA EL FOOTER DE LAS OPCIONES */
+.options{
+  font-size: 15px;
+  padding: 20px;
+  width: 100%;
+  color: black;
+}
+
+.options:hover,
+.collapsible:hover {
+  color:#000; /* fallback color */
+-webkit-text-fill-color:black; /* leave transparent or fill with a color! */
+-webkit-text-stroke-color:white; /* outline stroke color */
+-webkit-text-stroke-width:.5px; /* stroke outline thickness */
+}
+
+.optionen{
+  width: 20%;
+  margin-top: 40%;
+}
+
+
+/* INICIA FLECHAS */
+.flecha2{
+  width: 50%;
+  transform: translate(1100px,500px);
+}
+
+.flechaDerecha{
+  transform: translate(0px, 200px);
+}
+
+.flechaIzquierda{
+  width: 50%;
+  transform: translate(300px, 350px);
+}
+
+/* FIN FLECHAS */
+
+
+
+
+
+.imagen1{
+  width: 100%;
+  transform: translate(100%, -100%);
+}
+.imagen2{
+  width: 100%;
+  transform: translate(100%, 120%);
+}
+.imagen3{
+  width: 100%;
+  transform: translate(100%, 220%);
+}
+.imagen4{
+  width: 100%;
+  transform: translate(100%, 200%);
+
+}
+.imagen5{
+  width: 100%;
+  transform: translate(100%, 20%);
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––– LIST EXHIBITION*/
+.active {
+  font-family: 'suisse_medium', Arial, Helvetica, sans-serif;
+  color: white !important;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+
+.nombre{
+  font-size: 10px;
+}
+
+
+
+.year-border:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-top: 1px solid black;
+
+}
+
+.year-border {
+  width: 16.666666vw;
+  height: 150%;
+  transition: transform .5s;
+  transform: translate(0px, -200px);
+}
+
+.year {
+  width: 100%;
+  font-size: 20px;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+}
+
+.year1 {
+  font-family: 'suisse_medium', Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 17px;
+  padding: 15px;
+  background-color: rgb(11, 11, 11);
+  border-top: 1px solid white;
+}
+.year-titles-ex{
+  border: 1px solid white;
+  border-radius: 10% 30% 50% 70%;
+}
+#photoEnd{
+  transform: translate(0px, 10px);
+}
+
+.blend{
+  color: white;
+  margin-top: 5px;
+}
+
+
+
+
+
+.year-titles {
+  pointer-events: initial;
+}
+
+.year-titles ul {
+  transition: opacity .2s;
+}
+.year-titles-ex a:hover{
+  background-color: white;
+}
+
+
+#creditos1{
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
+
+#wrapper-event {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  height: 15%;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#wrapper-border {
+  position: fixed;
+  display: flex;
+  height: 80%;
+  bottom: 0;
+  left: 0;
+  z-index: 2 !important;
+  pointer-events: none;
+  /* padding-left: 50px; */
+
+}
+
+#wrapper-event ul {
+  line-height: 1.3;
+}
+
+#wrapper-event a {
+  cursor: pointer;
+}
+
+
+
+#mob-arrows {
+  display: none;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––– EXHIBITION PAGE */
+#desc1,
+#desc2,
+#details {
+  /* background-color: white; */
+}
+
+#desc1,
+#desc2 {
+  padding-left: var(--margin-s);
+}
+
+#desc1 {
+  font-size: 1.3em;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+#desc2 {
+  margin-left: var(--margin-s);
+  width: 48%;
+  margin-right: 1%;
+  margin-left: 51%;
+  font-size: .8em;
+  padding-left: 0;
+}
+
+#details {
+  font-size: .8em;
+  padding-right: 10px;
+}
+
+#details>ul li {
+  list-style: disclosure-closed outside;
+  margin-left: 15px;
+}
+
+#details p {
+  margin: 0.7rem 0;
+}
+
+.page-top {
+  /* background-color: white; */
+  padding-bottom: 30px;
+  font-size: 1.3em;
+}
+
+
+.title-film {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(223, 219, 218);
+  text-underline-offset: 3px;
+  border-bottom: 3px dotted white;
+  width: 700%;
+  font-size: 133px;
+}
+
+.description-film{
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 20px;
+  font-size: 23px;
+  width: 500%;
+}
+
+#titulo{
+  /* border-left: 3px solid white; */
+  padding-left: 40%;
+  height: 300%;
+  transform: translate(-200%,-2%);
+  z-index: -1;
+  border-left: 1px solid white;
+}
+/* Titulo Scenography */
+#tituloS{
+  /* border-left: 3px solid white; */
+  padding-left: 40%;
+  height: 300%;
+  transform: translate(-150%,-2%);
+  z-index: -1;
+  border-left: 1px solid white;
+}
+.title-sceno {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(223, 219, 218);
+  text-underline-offset: 13px;
+  border-bottom: 3px dotted white;
+  width: 900px;
+  font-size: 133px;
+}
+
+
+.grid p {
+  margin-bottom: 1em;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––––– NAV */
+.nav li a {
+  font-size: 10px;
+}
+
+a {
+  transition-duration: .5s;
+}
+
+a:hover,
+.collapsible:hover {
+  transition-duration: .3s;
+  color:#000; /* fallback color */
+-webkit-text-fill-color:transparent; /* leave transparent or fill with a color! */
+-webkit-text-stroke-color:#000; /* outline stroke color */
+-webkit-text-stroke-width:1.5px; /* stroke outline thickness */
+}
+
+#infos {
+  position: fixed;
+  top: 10px;
+  right: 40px;
+  padding-left: 0;
+  width: 4.8vw;
+}
+
+/* NOMBRE DE CARLA */
+#logo {
+  font-family: "suisse_medium", helvetica, sans-serif;
+  font-size: 20px;
+  color: black !important;
+}
+
+#logo1 {
+  font-family: "suisse_medium", helvetica, sans-serif;
+  font-size: 20px;
+  color: black !important;
+  margin: 20px;
+}
+
+
+.active0 {
+  font-family: 'suisse_medium', Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  padding: 1.5%;
+}
+/* NOMBRE DE CARLA EN SECCION DE FILM */
+#logo2 h3 {
+  font-family: "suisse_medium", helvetica, sans-serif;
+  font-size: 15px;
+  color: white !important;
+
+}
+
+#logo2 {
+  padding: 1.5%;
+}
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  z-index: 9999 !important;
+}
+
+
+#text-grid {
+  position: fixed;
+  margin-top: 1vh;
+  line-height: 1.2;
+}
+
+#basic-info {
+  z-index: 900 !important;
+  margin-top: 40px;
+}
+
+
+
+.left {
+  margin-left: 1px;
+  margin-right: 2px;
+}
+
+.left p {
+  padding-left: 5px;
+}
+
+.left li {
+  padding-left: 3px;
+}
+
+/* #text-grid #basic-info p {
+  margin-bottom: var(--margin-s);
+  line-height: var(--font-size-m);
+} */
+
+#text-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.grid .left button {
+  background-color: transparent;
+  padding: calc(var(--margin-s)/1.5) calc(var(--margin-s)/1);
+  border-radius: 100px;
+  margin-left: var(--intent);
+  border: 1px black solid;
+  font-family: var(--font-family-text);
+}
+
+/*-------------------- grid */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+[class*="cop-"] {
+  float: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0%;
+  z-index: 100;
+  grid-auto-rows: auto;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+/* LA CAJA DE LAS IMAGENES EN SCENOGRAPHY, */
+.col-6 {
+  margin-top: 20%;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 900px;
+
+}
+.grid-container > div {
+  text-align: center;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+
+
+.grid-container img{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  width: 100%;
+  margin: 20px;
+  margin-top: 100%;
+
+  
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+.grid-phone {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+}
+
+.grid-phone-years {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+}
+
+.cop-1 {
+  grid-column: span 1;
+}
+
+.cop-2 {
+  grid-column: span 2;
+}
+
+.cop-3 {
+  grid-column: span 3;
+}
+
+/*--------------------- */
+/* ESTO ES PARA EL CARROUSEL DE LAS FOTOGRAFIAS */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  transform: translate(100%, 20%);
+}
+
+
+.textoInNomide{
+  background-color: white;
+  transform: translate(50%, -80%);
+  padding: 20px;
+  font-size: 12px;
+}
+.textoTom{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(50%, 30%);
+  padding: 20px;
+  font-size: 12px;
+}
+
+.textoRock{
+  background-color: white;
+  transform: translate(50%, 60%);
+  padding: 20px;
+  font-size: 12px;
+}
+
+
+/* MACBETH */
+.mySlides2 img{
+  transform: translate(0%,0%);
+}
+/* Fin MACBETH */
+
+/* VESUVIO DRAWING SECTION */
+.mySlides0 img{
+  transform: translate(0%,20%);
+}
+
+/* Photography section tip not to tap */
+
+.textTip {
+  background-color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #020202;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 130%;
+  text-align: center;
+}
+
+.numbertextTip {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-150%, 290%);
+}
+
+
+.textVes {
+  background-color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #020202;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 130%;
+  text-align: center;
+  transform: translate(0%, 100%);
+}
+
+.textoVes{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(50%, 120%);
+  padding: 20px;
+  font-size: 12px;
+}
+/* END VESUVIO DRAWING SECTION */
+
+/* GENERAL DRAWINGS */
+.mySlidesGeneral img{
+  transform: translate(5%,30%);
+}
+/* END GENERAL DRAWING SECTION */
+
+/* Figure drawing section */
+.textoFigure{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(50%, 170%);
+  padding: 20px;
+  font-size: 12px;
+}
+
+.numbertextFigure {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-150%, 390%);
+}
+
+.mySlidesFigure img{
+  transform: translate(0%,20%);
+}
+
+/* End Figure drawing section */
+
+/* Etikkets section */
+
+.numbertextEtikkets {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-150%, 390%);
+}
+
+.mySlidesEtikkets img{
+  transform: translate(0%,20%);
+}
+
+.textEtikkets {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+/* End of etikkets section */
+
+/* Architectural section */
+
+.numbertextArch {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-150%, 390%);
+}
+
+.mySlidesArch img{
+  transform: translate(0%,20%);
+}
+
+.textArch {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+/* End of Architectural section */
+
+
+
+
+
+.mySlidesRR img{
+  transform: translate(15%,0%);
+}
+
+
+#contenido1{
+  display: none;
+}
+
+#contenido0{
+  display: none;
+}
+#contenido2{
+  display: none;
+}
+#contenido3{
+  display: none;
+}
+#contenido4{
+  display: none;
+}
+#contenido5{
+  display: none;
+}
+#contenido6{
+  display: none;
+}
+#contenido7{
+  display: none;
+}
+
+#contenidoRock{
+  display: none;
+}
+
+#contenidoDido{
+  display: none;
+}
+
+#botonMostrarOcultar00{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(125%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultar22{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-5%, 530%);
+  padding: 3%;
+}
+
+#botonMostrarOcultar1{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(45%, 330%);
+  padding: 3%;
+}
+#botonMostrarOcultar2M{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-62%, 430%);
+  padding: 3%;
+}
+
+/* SCENOGRAPHY SECTION */
+#botonMostrarOcultar0{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(110%, 330%);
+  padding: 3%;
+}
+#botonMostrarOcultar2{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-10%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultar3{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(14%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultar4{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-83%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultar5{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(3%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultar6{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(21%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultar7{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(0%, 530%);
+  padding: 3%;
+}
+
+
+
+#botonMostrarOcultarD{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(0%, 530%);
+  padding: 3%;
+}
+
+
+
+/* PHOTOGRAPHY section */
+#botonMostrarOcultarTip{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(100%, 330%);
+  padding: 3%;
+}
+#botonMostrarOcultarR{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(40%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultarMx{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-61%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultarIm{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(30%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultarFra{
+  font-size: 14px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(7%, 598%);
+  padding: 3%;
+}
+#botonMostrarOcultarEx{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-82%, 615%);
+  padding: 3%;
+}
+#botonMostrarOcultarAkt{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(40%, 615%);
+  padding: 3%;
+}
+/* END OF PHOTOGRAPHY */
+
+/* DRAWING SECTION */
+#botonMostrarOcultarVes{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(193%, 330%);
+  padding: 3%;
+}
+#botonMostrarOcultarGeneral{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-23%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultarFigure{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(78%, 430%);
+  padding: 3%;
+}
+#botonMostrarOcultarEtikkets{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(-40%, 530%);
+  padding: 3%;
+}
+#botonMostrarOcultarArch{
+  font-size: 20px;
+  border: 1px dotted white;
+  color: white;
+  transform: translate(33%, 530%);
+  padding: 3%;
+}
+/* END OF DRAWING */
+
+
+.slideshow-container2 {
+  max-width: 1000px;
+  transform: translate(160%, 0%);
+}
+.slideshow-container3 {
+  max-width: 1000px;
+  transform: translate(100%, -20%);
+}
+
+
+/* Next & previous buttons */
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: 10%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+} */
+
+.prev img{
+  width: 30%;
+  transform: translate(-80%, -600%);
+}
+
+.next img{
+  width: 30%;
+  transform: translate(400%, -900%);
+}
+
+.prevM img{
+  width: 30%;
+  transform: translate(-70%, -600%);
+}
+
+.nextM img{
+  width: 30%;
+  transform: translate(450%, -900%);
+}
+
+.nextL img{
+  width: 30%;
+  transform: translate(430%, -900%);
+}
+
+.prevDido img{
+  width: 30%;
+  transform: translate(-80%, 100%);
+}
+
+.nextDido img{
+  width: 30%;
+  transform: translate(400%, 30%);
+}
+
+.prevMo img{
+  width: 30%;
+  transform: translate(-280%, 100%);
+}
+
+.nextMo img{
+  width: 30%;
+  transform: translate(200%, 30%);
+}
+
+
+/* Caption text */
+.text {
+  background-color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #020202;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 130%;
+  text-align: center;
+  transform: translate(0%, -100%);
+}
+.textoInNomide{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+}
+.textoInNomide a {
+  color: red;
+}
+
+.textT {
+  background-color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #020202;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 130%;
+  text-align: center;
+  transform: translate(0%, -100%);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 90%);
+}
+/* SCENOGRAPHY TEXTS NuMBER */
+.numbertextS {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 370%);
+}
+
+.numbertextM {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 270%);
+}
+
+.numbertextLern {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 180%);
+}
+.numbertextMx {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-180%, 180%);
+}
+
+.numbertextK {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 180%);
+}
+
+.numbertextD {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 180%);
+}
+
+.numbertextBoring {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-180%, 180%);
+}
+
+/* COSTUME TEXTS NuMBER */
+.numbertextRock{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-120%, 780%);
+}
+
+.numbertextDido{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-120%, 780%);
+}
+
+/* TEXTO DE RELLENO SCENOGRAPHY */
+.textM {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(5%, 1700%);
+}
+.textMo {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(-55%, 1600%);
+}
+
+.numbertextMoo{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  transform: translate(-765%, 420%);
+}
+
+.mySlidesMoo img{
+  transform: translate(-55%, 50%);
+
+}
+
+.textLern {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+.textK {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+.textD {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+.textBoring {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 1700%);
+}
+
+/* TEXTO DE RELLENO CUSTOME DESIGN */
+.textRock{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 2200%);
+}
+
+.textDido{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f2f2f2;
+  color: #131313;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 130%;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 2200%);
+}
+
+
+
+
+.mySlides3 img{
+  transform: translate(0%,0%);
+}
+.mySlidesMx img{
+  transform: translate(0%,15%);
+}
+.mySlides4 img{
+  transform: translate(0%,0%);
+}
+.mySlidesIm img{
+  transform: translate(0%,20%);
+}
+.mySlides5 img{
+  transform: translate(0%,0%);
+}
+.mySlides6 img{
+  transform: translate(0%,20%);
+}
+.mySlides6 img{
+  transform: translate(0%,10%);
+}
+.mySlides7 img{
+  transform: translate(0%,30%);
+}
+.mySlidesAkt img{
+  transform: translate(0%,20%);
+}
+
+.mySlidesRock img{
+  transform: translate(0%, 40%);
+}
+
+.mySlidesDido img{
+  transform: translate(0%, 50%);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

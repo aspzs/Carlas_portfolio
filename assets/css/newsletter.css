@@ -1,0 +1,134 @@
+
+/* mailchimp */
+
+/* .mailchimp .footnote {
+  padding: var(--flow-space-half) var(--flow-space-half) 0 var(--flow-space-half);
+} */
+
+.mailchimp #mc-embedded-subscribe-form {
+  z-index: 9999;
+  width: 100%;
+}
+
+.mailchimp #mc-embedded-subscribe-form #mc_embed_signup {
+  /* padding: calc(var(--flow-space-half)); */
+}
+
+.mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group {
+  /* display: flex; */
+  flex-direction: row;
+  /* line-height: var(--font-size-m);
+  height: var(--top); */
+}
+
+.mailchimp #mc-embedded-subscribe-form #mc_embed_signup .mc-field-group>* {
+  /* margin: 0 var(--flow-space-half) 0 var(--flow-space-half); */
+}
+
+#mc_embed_signup .mc-field-group input{
+  background-color: transparent;
+padding: calc(var(--margin-s)/1.5) calc(var(--margin-s)/1);
+border-radius: 100px;
+margin-left:var(--intent);
+margin-top:calc(var(--margin-s));
+  border: 1px black solid;
+  inset:0;
+  font-family: var(--font-family-text);
+  text-align: left;
+  /*width:calc(var(--margin-l)*4);*/
+  width: 90%;
+}
+
+.mailchimp #mc_embed_signup .button{
+  height: auto;
+  background-color: transparent;
+  color:black;
+  padding: calc(var(--margin-s)/1.5) calc(var(--margin-s)/1);
+  border: 0px black solid;
+  font-family: var(--font-family-text);
+  transition: all var(--time-ms) ease-out;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  float: left;
+  margin-left: var(--intent);
+}
+
+
+
+
+.mailchimp #mc_embed_signup .button:hover {
+cursor: pointer;
+}
+
+.mailchimp #mc_embed_signup .button:focus {
+color: grey;
+}
+
+.align{
+  margin:47vh 25vw 0 25vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.mailchimp #mc_embed_signup div.mce_inline_error{
+    background-color: transparent;
+    padding: 10px 0 0 0;
+    margin-left: var(--intent);
+    margin-bottom: 0;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-xs);  
+    color:black;
+}
+
+.mailchimp #mce-responses{
+    padding-bottom:var(--flow-space-full);
+    font-family: var(--font-family);
+    font-size: var(--font-size-s);  
+    display: grid;
+}
+
+#mce-success-response{
+  color:white;
+  padding-bottom: calc(var(--font-size-xs)*1.2);
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-xs);
+  }
+
+  .topNav, .footer{
+    position: absolute;
+    color: var(--clr-green);
+    right:0;
+}
+.footer{
+    bottom:0;
+}
+
+.sphere{
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+#logo-nav{
+    min-width: 14vh;
+    margin-top: 5vh;
+  }
+
+  
+.fill:hover{
+fill:white;
+}
+
+#mce-success-response{
+color:white;
+padding-bottom: calc(var(--font-size-xs)*1.2);
+font-family: var(--font-family-text);
+font-size: var(--font-size-xs);
+}
+
+
+#mce-success-response{
+  color: black !important;
+  padding-top: 10px;
+  margin-left: var(--intent);
+}
