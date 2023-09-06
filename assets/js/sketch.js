@@ -1,47 +1,52 @@
-let canvas;
-let spacing = 15; // Espaciado entre las líneas
-let speed = 0.03; // Velocidad de movimiento de las líneas
-let lines = [];
+// const S = 15, C = 0, E = 40, M = 0.3;
+// let L = [];
+
+// function setup() {
+//   createCanvas(windowWidth, windowHeight).position(0, 0).style('z-index', '-1');
+//   for (let x = 0; x < width; x += S)
+//     for (let y = 0; y < height; y += S) {
+//       const a = random(TWO_PI);
+//       L.push({ s: createVector(x, y), e: createVector(x + cos(a) * S, y + sin(a) * S) });
+//     }
+// }
+
+// function draw() {
+//   background(255);
+//   L.forEach(({ s, e }) => {
+//     strokeWeight(random(M));
+//     stroke(C);
+//     line(s.x, s.y, e.x, e.y);
+//   });
+//   fill(170);
+//   ellipse(mouseX, mouseY, E);
+// }
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0, 0);
-  canvas.style('z-index', '-1');
-  generateLines();
-}
-
-function generateLines() {
-  for (let x = 0; x < width; x += spacing) {
-    for (let y = 0; y < height; y += spacing) {
-      lines.push({ x, y, angle: random(TWO_PI), distance: dist(x, y, width / 2, height / 2) });
-    }
-  }
+  createCanvas(windowWidth, windowHeight).position(0, 0).style('z-index', '-1');  background(255);
+  stroke(0);
 }
 
 function draw() {
-  background(255);
+  let x1 = random(width);
+  let y1 = random(height);
+  let x2 = x1 + random(-20, 20);
+  let y2 = y1 + random(-20, 20);
 
-  for (let i = 0; i < lines.length; i++) {
-    let lineData = lines[i];
-    let cosAngle = cos(lineData.angle);
-    let sinAngle = sin(lineData.angle);
-    let xOffset = cosAngle * spacing;
-    let yOffset = sinAngle * spacing;
-    strokeWeight(random(0, 0.3));
-    stroke(0);
-    line(lineData.x, lineData.y, lineData.x + xOffset, lineData.y + yOffset);
+  let gray = random(100, 255); // Escala de grises
 
-    // let distanceToMouse = dist(mouseX, mouseY, lineData.x, lineData.y);
-    // if (distanceToMouse < lineData.distance) {
-    //   let angle = atan2(lineData.y - mouseY, lineData.x - mouseX);
-    //   let force = map(lineData.distance, 0, width / 2, 90, 0);
-    //   let xRepel = cos(angle) * force;
-    //   let yRepel = sin(angle) * force;
-    //   strokeWeight(random(0, 2.1));
-    //   stroke(241, 211, 159);
-    //   line(lineData.x, lineData.y, lineData.x + xRepel, lineData.y + yRepel);
-    // }
+  stroke(gray);
 
-    // lineData.angle += speed;
-  }
+  line(x1, y1, x2, y2);
+  line(x1+2, y1+1, x2, y2);
+  line(x1, y1, x2+2, y2+2);
 }
+function mouseMoved() {
+  background(255); // Limpia el fondo en cada movimiento del mouse
+  fill(150);
+  ellipse(mouseX, mouseY, 20, 20);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+

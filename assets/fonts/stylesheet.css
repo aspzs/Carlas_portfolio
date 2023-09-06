@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks.woff2') format('woff2'),
+        url('SuisseWorks.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works Book';
+    src: url('SuisseWorks-Book.woff2') format('woff2'),
+        url('SuisseWorks-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks-Italic.woff2') format('woff2'),
+        url('SuisseWorks-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks-MediumItalic.woff2') format('woff2'),
+        url('SuisseWorks-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks-Medium.woff2') format('woff2'),
+        url('SuisseWorks-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Neue';
+    src: url('SuisseNeue-Light.woff2') format('woff2'),
+        url('SuisseNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Neue';
+    src: url('SuisseNeue-MediumItalic.woff2') format('woff2'),
+        url('SuisseNeue-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works Book';
+    src: url('SuisseWorks-BookItalic.woff2') format('woff2'),
+        url('SuisseWorks-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskDisp Pro';
+    src: url('NHaasGroteskDSPro-55Rg.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-55Rg.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Neue';
+    src: url('SuisseNeue-LightItalic.woff2') format('woff2'),
+        url('SuisseNeue-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks-Bold.woff2') format('woff2'),
+        url('SuisseWorks-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro Md';
+    src: url('NHaasGroteskTXPro-65Md.woff2') format('woff2'),
+        url('NHaasGroteskTXPro-65Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Works';
+    src: url('SuisseWorks-BoldItalic.woff2') format('woff2'),
+        url('SuisseWorks-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suisse Neue';
+    src: url('SuisseNeue-Medium.woff2') format('woff2'),
+        url('SuisseNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manege Demo';
+    src: url('ManegeDemo-Light.woff2') format('woff2'),
+        url('ManegeDemo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satyr10Trial';
+    src: url('Satyr10Trial-Italic.woff2') format('woff2'),
+        url('Satyr10Trial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskText Pro Md';
+    src: url('NHaasGroteskTXPro-65Md.woff2') format('woff2'),
+        url('NHaasGroteskTXPro-65Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Camera Unlicensed Trial';
+    src: url('ABCCamera-Regular.woff2') format('woff2'),
+        url('ABCCamera-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramond.woff2') format('woff2'),
+        url('AppleGaramond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('CircularStd-Book.woff2') format('woff2'),
+        url('CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Bold.woff2') format('woff2'),
+        url('CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apple Garamond';
+    src: url('AppleGaramondLight.woff2') format('woff2'),
+        url('AppleGaramondLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueHaasGroteskDisp Pro';
+    src: url('NHaasGroteskDSPro-55Rg.woff2') format('woff2'),
+        url('NHaasGroteskDSPro-55Rg.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OBC';
+    src: url('OBC-Light.woff2') format('woff2'),
+        url('OBC-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satyr10Trial';
+    src: url('Satyr10Trial-Regular.woff2') format('woff2'),
+        url('Satyr10Trial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

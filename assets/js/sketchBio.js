@@ -17,7 +17,7 @@ function draw() {
   let diff = p5.Vector.sub(mousePos, circlePos);
   circlePos.add(diff.mult(0.2));
 
-  fill(255);
+  fill(175);
   ellipse(circlePos.x, circlePos.y, 40);
 }
 
@@ -29,4 +29,8 @@ function drawGradient(x, y, w, h, colors) {
     stroke(c);
     line(i + x, y, i + x, y + h);
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

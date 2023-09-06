@@ -27,6 +27,8 @@ function setup() {
         }
       }
     }
+    fill(235);
+    ellipse(mouseX, mouseY, 30);
   }
   
   function drawLine(start, end) {
@@ -34,3 +36,6 @@ function setup() {
     line(start/10, 0, end/28, 0);
   }
   
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
